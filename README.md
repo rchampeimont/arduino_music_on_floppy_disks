@@ -1,6 +1,8 @@
 # arduino_music_on_floppy_disks
 Playing music stored on floppy disks with two Arduinos
 
+Here is a video in which I present the result and explain the challenges: https://www.youtube.com/watch?v=-Ej4zM4t6mE
+
 ![General overview](/images/overview.jpg?raw=true)
 
 Required hardware:
