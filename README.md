@@ -1,5 +1,4 @@
-# arduino_music_on_floppy_disks
-Playing music stored on floppy disks with two Arduinos
+# Arduino project: playing music from floppy disks
 
 Here is a video in which I present the result and explain the challenges: https://www.youtube.com/watch?v=-Ej4zM4t6mE
 
@@ -8,15 +7,15 @@ This project uses code from https://github.com/dhansel/ArduinoFDC
 ![General overview](/images/overview.jpg?raw=true)
 
 # Required hardware
-* 2 x Arduino Uno[1] R3 (probably works with earlier versions too but untested).
+* 2 x Arduino Uno[1] R3 (probably works with earlier versions too but untested)
 * 1 x regular 3.5" 1.44MB floppy drive
-* 1 x regular 1.44 MB floppy disk
+* 1 (or more) regular 1.44 MB floppy disk
 * 13 x 1 kohm resitors (or 3 x 1khom resistors and 5 x 2 kohm resistors)
 * 1 x 100 µF (ore more) capacitor
 * optional: 1 x operational amplifier circuit (only needed to drive a "raw" speaker, you don't need it to use headphones or "computer" speakers)
 * optional: LEDs and their adapted resistors if you want the LEDs (just for debug/fun but the circuit works without LEDs of course)
 
-[1] Note: In the YouTube video I used a Leonardo as the floppy disk controller, but here I uploaded code that runs on two Unos to make it easier for you, as I assume Unos are more widely available.
+[1] Note: In the YouTube video I used an Arduino Leonardo as the floppy disk controller, but here I uploaded code that runs on two Arduino Unos to make it easier for you, as I assume Arduino Unos are more widely available.
 
 # Software
 Here is what each directory contains:
