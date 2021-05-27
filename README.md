@@ -21,7 +21,11 @@ This project uses code from https://github.com/dhansel/ArduinoFDC
 Here is what each directory contains:
 * **floppy_reader** is the Arduino code to upload to the "floppy drive controller" Arduino Uno
 * **sound_player_4bit** is the Arduino code to upload to the "sound player" Arduino Uno
-* **make_floppy_image** is a C program I wrote to convert a 8-bit Mono WAV file to a 1.44 MB floppy image
+* **make_floppy_image** is a C program I wrote to convert a 8-bit 8kHz Mono WAV file to a 1.44 MB floppy image
+
+To create a WAV file in the format expected by "make_floppy_image", you can use Audacity to change the sampling rate of an existing sound file (you both need to resample and change the project sample rate), merge to mono channel, and then export to "other uncompressed format" and select "Microsoft WAV" with "Unsigned 8-bit PCM" encoding.
+
+To upload the floppy image to a floppy disk, you can do it with the Arduino by using the XMODEM interface provided in https://github.com/dhansel/ArduinoFDC (from which I re-used the low-level library). I have kept the default pin assignments from ArduinoFDC so you should be able to use the same circuit connections as in my project. You could also write the floppy disk image to a floppy disk simply using a computer (but I could not test this scenario as my computer motherboard does not have a floppy drive controller, as they are usually absent from modern motherboards).
 
 # Circuit schematics
 ![Schematic for floppy drive controller](/images/circuit_fdc.jpg?raw=true)
