@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Code Blocks stuff
+*.depend
+*.layout
+
+# Custom stuff
+*.wav
+*.img
