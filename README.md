@@ -3,6 +3,8 @@ Playing music stored on floppy disks with two Arduinos
 
 Here is a video in which I present the result and explain the challenges: https://www.youtube.com/watch?v=-Ej4zM4t6mE
 
+This project uses code from https://github.com/dhansel/ArduinoFDC
+
 ![General overview](/images/overview.jpg?raw=true)
 
 Required hardware:
