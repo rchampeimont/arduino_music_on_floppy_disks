@@ -594,7 +594,7 @@ static void write_data(byte bitlen, byte *buffer, unsigned int n)
      "          subi    r26, 1\n"        // (1)   subtract one from byte counter
      "          sbci    r27, 0\n"        // (1) 
      "          brmi    wdone\n"         // (1/2) done if byte counter <0
-     "          ld  r20, Z+\n"       // (2)   get next byte
+     "          ld	r20, Z+\n"       // (2)   get next byte
      "          ldi     r21, 7\n"        // (1)   reset bit counter (7 more bits after this first one)
      "          rol     r20\n"           // (1)   get next data bit into carry
      ".endm\n"
@@ -881,7 +881,7 @@ static byte format_track(byte *buffer, byte driveType, byte bitlen, byte track, 
      "          brpl    fio0\n"          // (1/2) skip the following if bit counter >=  0
      "          subi    r26, 1\n"        // (1)   subtract one from byte counter
      "          brmi    fidone\n"        // (1/2) done if byte counter <0
-     "          ld  r20, Z+\n"       // (2)   get next byte
+     "          ld	r20, Z+\n"       // (2)   get next byte
      "          ldi     r21, 7\n"        // (1)   reset bit counter (7 more bits after this first one)
      "fio0:     rol     r20\n"           // (1)   get next data bit into carry
      "          brcs    fio1\n"          // (1/2) jump if "1"
@@ -900,7 +900,7 @@ static byte format_track(byte *buffer, byte driveType, byte bitlen, byte track, 
      "          brpl    fie0\n"          // (1/2) skip the following if bit counter >=  0
      "          subi    r26, 1\n"        // (1)   subtract one from byte counter
      "          brmi    fidone\n"        // (1/2) done if byte counter <0
-     "          ld  r20, Z+\n"       // (2)   get next byte
+     "          ld	r20, Z+\n"       // (2)   get next byte
      "          ldi     r21, 7\n"        // (1)   reset bit counter (7 more bits after this first one)
      "fie0:     rol     r20\n"           // (1)   get next data bit into carry
      "          brcs    fie1\n"          // (1/2) jump if "1"

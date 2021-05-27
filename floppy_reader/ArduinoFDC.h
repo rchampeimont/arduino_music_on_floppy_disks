@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
 // 3.5"/5.25" DD/HD Disk controller for Arduino
-// Copyright (C) 2021 David HanselArduinoFDC
+// Copyright (C) 2021 David Hansel
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
