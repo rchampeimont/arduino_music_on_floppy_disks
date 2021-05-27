@@ -7,7 +7,7 @@ This project uses code from https://github.com/dhansel/ArduinoFDC
 
 ![General overview](/images/overview.jpg?raw=true)
 
-Required hardware:
+# Required hardware
 * 2 x Arduino Uno[1] R3 (probably works with earlier versions too but untested).
 * 1 x regular 3.5" 1.44MB floppy drive
 * 1 x regular 1.44 MB floppy disk
@@ -17,3 +17,13 @@ Required hardware:
 * optional: LEDs and their adapted resistors if you want the LEDs (just for debug/fun but the circuit works without LEDs of course)
 
 [1] Note: In the YouTube video I used a Leonardo as the floppy disk controller, but here I uploaded code that runs on two Unos to make it easier for you, as I assume Unos are more widely available.
+
+# Software
+Here is what each directory contains:
+* **floppy_reader** is the Arduino code to upload to the "floppy drive controller" Arduino Uno
+* **sound_player_4bit** is the Arduino code to upload to the "sound player" Arduino Uno
+* **make_floppy_image** is a C program I wrote to convert a 8-bit Mono WAV file to a 1.44 MB floppy image
+
+# Circuit schematics
+![Schematic for floppy drive controller](/images/circuit_fdc.jpg?raw=true)
+![Schematic for sound player](/images/circuit_player.jpg?raw=true)
