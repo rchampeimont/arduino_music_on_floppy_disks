@@ -1,4 +1,4 @@
-// Copyright (c) 2021 Raphael Champeimont
+// Copyright (c) 2021 River Champeimont
 
 // Code designed for Arduino Uno R3
 
